@@ -1,0 +1,650 @@
+/* Start Global */
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.action{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+.do-action-js{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+/* End Global */
+
+/* Start Navbar */
+.nav-link.active{
+    color: #e3bd44 !important;
+}
+
+nav{
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 11111111111111111111;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.pad{
+    padding-top: 87px;
+}
+
+.nav-custom{
+    background-color: #121618;
+    color: #b4b6af;
+}
+
+.logo{
+    font-size: 25px;
+    font-family: cursive;
+    position: relative;
+}
+
+.logo::after{
+    content: "DELICOUS";
+    color: #e3bd44;
+    font-size: 11px;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    letter-spacing: 6px;
+}
+/* End Navbar */
+
+/* Start Slider */
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.slider-custom{
+    height: 100%;
+    padding-top: 100px;
+}
+
+.slider-text-custom span{
+    font-family: cursive;
+    font-size: 30px;
+    color: #fac564;
+}
+
+.slider-text-custom button{
+    all: unset;
+    width: 80px;
+    height: 50px;
+    border: 1px solid #fac564;
+    padding: 5px 15px;
+    background-color: #fac564;
+    color: black;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.slider-text-custom button:hover{
+    background-color: inherit;
+    color: #fac564;
+}
+
+.menu-btn{
+    background-color: inherit !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.menu-btn:hover{
+    background-color: #fac564 !important;
+    color: black !important;
+    border: 1px solid #fac564 !important;
+}
+
+@media only screen and (max-width: 977px) {
+    .z {
+      height: 135vh !important;
+    }
+}
+/* End Slider */
+
+/* Start Slider Footer */
+.slider-footer{
+    background-color: black;
+}
+
+.home-footer-js{
+    transition: .4s ease-in-out;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.slider-footer-right{
+    background-color: #fac564;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slider-footer-left i{
+    color: #fac564;
+}
+/* End Slider Footer */
+
+/* Start About */
+.about{
+    width: 99%;
+}
+
+.about-text{
+    background-image: url("bg_4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-photo{
+    height: 400px;
+    width: 100%;
+}
+
+.about h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about p{
+    color: #808080;
+}
+
+.about span{
+    color: #fac564;
+}
+/* End About */
+
+/* Start Service */
+.service{
+    background-image: url("food.png");
+}
+
+.service-img{
+    border: 1px solid #bf7e06;
+    width: 100px;
+    padding: 20px;
+    transition: .4s ease-in-out;
+}
+
+.service img{
+    transition: .4s ease-in-out;
+}
+
+.i:hover .service-img{
+    transform: rotate(45deg);
+    background-color: orange;
+}
+
+.i:hover .x{
+    transform: rotate(-45deg);
+}
+/* End Service */
+
+/* Start Hot */
+.hot{
+    background-image: url("bg_4.jpg");
+}
+
+.hot p{
+    color: #808080;
+}
+
+.hot span{
+    color: #fac564;
+}
+
+.hot-text{
+    background-image: url("bg_4.jpg");
+}
+
+.hot-img-1 , .hot-img-2 , .hot-img-3 , .hot-img-4 , .hot-img-5 , .hot-img-6{
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.hot-img-1{
+    background-image: url("pizza-1.jpg");
+}
+
+.hot-img-2{
+    background-image: url("pizza-2.jpg");
+}
+
+.hot-img-3{
+    background-image: url("pizza-3.jpg");
+}
+
+.hot-img-4{
+    background-image: url("pizza-4.jpg");
+}
+
+.hot-img-5{
+    background-image: url("pizza-5.jpg");
+}
+
+.hot-img-6{
+    background-image: url("pizza-6.jpg");
+}
+
+.hot button{
+    all: unset;
+    color: white;
+    border: 1px solid white;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.hot button:hover{
+    color: black;
+    background-color: #fac564;
+    border: 1px solid #fac564;
+}
+/* End Hot */
+
+/* Start Pricing */
+.pricing{
+    background-image: url("bg_4.jpg");
+}
+
+.pricing p{
+    color: #808080;
+}
+
+.tri{
+    width: 10px;
+    height: 10px;
+    background-color: #fac564;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    position: relative;
+}
+
+.tri::after , .tri::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #fac564;
+    position: absolute;
+}
+
+.tri::after{
+    top: -11px;
+    right: -12px;
+}
+
+.tri::before{
+    top: 12px;
+    left: -10px;
+}
+
+.pricing h1{
+    position: relative;
+}
+
+.pricing h1::after , .pricing h1::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: orange;
+    position: absolute;
+    top: 78px;
+    display: none;
+}
+
+@media only screen and (min-width: 1440px){
+    .pricing h1::after{
+        right: 750px;
+        display: inline;
+    }
+    
+    .pricing h1::before{
+        right: 630px;
+        display: inline;
+    }
+}
+
+.cir1 , .cir2 , .cir3 , .cir4 , .cir5 , .cir6 , .cir7 , .cir8{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.cir1{
+    background-image: url("pizza-1.jpg");
+}
+
+.cir2{
+    background-image: url("pizza-2.jpg");
+}
+
+.cir3{
+    background-image: url("pizza-3.jpg");
+}
+
+.cir4{
+    background-image: url("pizza-4.jpg");
+}
+
+.cir5{
+    background-image: url("pizza-5.jpg");
+}
+
+.cir6{
+    background-image: url("pizza-6.jpg");
+}
+
+.cir7{
+    background-image: url("pizza-7.jpg");
+}
+
+.cir8{
+    background-image: url("pizza-8.jpg");
+}
+
+.con span {
+    color: orange;
+}
+
+.con h5{
+    color: #bfbfbf;
+}
+
+.con i{
+    color: #fac564;
+}
+
+.p-img-1 , .p-img-2 , .p-img-3 , .p-img-4{
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.p-img-1{
+    background-image: url("gallery-1.jpg");
+}
+
+.p-img-2{
+    background-image: url("gallery-2.jpg");
+}
+
+.p-img-3{
+    background-image: url("gallery-3.jpg");
+}
+
+.p-img-4{
+    background-image: url("gallery-4.jpg");
+}
+
+.child{
+    color: white;
+    background-color: #fac564;
+    width: 70px;
+    height: 70px;
+    transition: .4s ease-in-out;
+    opacity: 0;
+}
+
+.parent:hover .child{
+    transform: rotate(45deg);
+    opacity: 1;
+}
+
+.parent:hover .hovi{
+    transform: rotate(-45deg);
+}
+/* End Pricing */
+
+/* Start Rate */
+.rate{
+    background-image: url("bg_2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 150px;
+}
+
+@media only screen and (max-width: 768px){
+    .rate{
+        padding-bottom: 900px;
+    }
+}
+
+.rate h1{
+    color: #fac564;
+}
+
+.rate p{
+    color: #bfbfbf;
+}
+
+.overlay{
+    background-color: rgb(0 , 0 , 0 ,.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/* End Rate */
+
+/* Start Filter */
+.filter{
+    background-image: url("bg_4.jpg");
+}
+
+.filter img{
+    height: 100%;
+    width: 100%;
+}
+
+.filter p{
+    color: #808080;
+}
+
+.filter span{
+    color: #fac564;
+}
+
+.add{
+    all: unset;
+    color: white;
+    border: 1px solid white;
+    background-color: inherit;
+    padding: 5px 10px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.add:hover{
+    background-color: #fac564;
+    border: 1px solid #fac564;
+    color: black;
+}
+
+.filter-button{
+    height: 50px;
+    background-color: inherit;
+    color: #fac564;
+    border: 1px solid #fac564;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: cursive;
+    transition: .4s ease-in-out;
+}
+
+.filter-button.active{
+    background-color: #fac564;
+    color: black;
+}
+
+.filter-button:hover{
+    background-color: #fac564;
+    color: black;
+}
+
+.filter-img-1 , .filter-img-2 , .filter-img-3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.filter-img-1{
+    background-image: url("pizza-1.jpg");
+}
+
+.filter-img-2{
+    background-image: url("pizza-2.jpg");
+}
+
+.filter-img-3{
+    background-image: url("pizza-3.jpg");
+}
+/* End Filter */
+
+/* Start Blog */
+.blog{
+    background-image: url("bg_4.jpg");
+}
+
+.blog p{
+    color: #808080;
+}
+
+.blog h5{
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.blog h5:hover{
+    color: #fac564 !important;
+}
+
+.blog-img-1 , .blog-img-2 , .blog-img-3{
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+}
+
+.blog-img-1{
+    background-image: url("image_1.jpg");
+}
+
+.blog-img-2{
+    background-image: url("image_2.jpg");
+}
+
+.blog-img-3{
+    background-image: url("image_3.jpg");
+}
+/* End Blog */
+
+/* Start Contact */
+.contact{
+    background-color: black;
+}
+
+.contact input , textarea{
+    all: unset;
+    width: 70%;
+    background-color: inherit;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact button{
+    all: unset;
+    color: black;
+    background-color: #fac564;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 1px solid #fac564;
+    transition: .4 ease-in-out;
+}
+
+.contact button:hover{
+    background-color: black;
+    color: #fac564;
+}
+
+.m{
+    height: 563px;
+}
+/* End Contact */
+
+/* Start Footer */
+.footer{
+    background-color: #101315;
+}
+
+.footer p{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-icon i{
+    border: 1px solid #1c1e20;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #1c1e20;
+    cursor: pointer;
+}
+
+.footer-icon p{
+    line-height: 2;
+}
+
+.footer span{
+    color: #808080;
+}
+
+.footer h6{
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer h5{
+    color: #808080;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.footer h5:hover{
+    color: white !important;
+}
+
+.footer h6:hover{
+    color: #fac564 !important;
+}
+
+.footer-photo-1 , .footer-photo-2{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.footer-photo-1{
+    background-image: url("image_1.jpg");
+}
+
+.footer-photo-2{
+    background-image: url("image_2.jpg");
+}
+/* End Footer */
